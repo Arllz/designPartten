@@ -18,6 +18,11 @@ class Test extends TestCase
         $this->assertInstanceOf(Singleton::class,$first);
         $this->assertInstanceOf(Singleton::class,$second);
     }
+
+    public function index2()
+    {
+
+    }
 }
 
 (new Test())->index();
