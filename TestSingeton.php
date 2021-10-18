@@ -5,18 +5,14 @@ use PHPUnit\Framework\TestCase;
 
 $loader = require 'vendor/autoload.php';
 
-class Test extends TestCase
+class TestSingeton extends TestCase
 {
-    public function index()
+    public function testUniqueness()
     {
         $first = Singleton::getInstance();
         $second = Singleton::getInstance();
-        echo "<pre>";
-        var_dump($first);
-        var_dump($second);
         $this->assertInstanceOf(Singleton::class,$first);
-        $ret = $this->assertSame($first,$second);
-        var_dump($ret);
+        $this->assertSame($first,$second);
     }
 
     public function index2()
@@ -24,8 +20,6 @@ class Test extends TestCase
 
     }
 }
-
-(new Test())->index();
 
 
 

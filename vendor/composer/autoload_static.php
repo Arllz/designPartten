@@ -33,6 +33,7 @@ class ComposerStaticInitd15f57450c94616c44b7c3b3c78cc109
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
+            'DesignPartterns\\' => 16,
             'DeepCopy\\' => 9,
         ),
     );
@@ -63,6 +64,10 @@ class ComposerStaticInitd15f57450c94616c44b7c3b3c78cc109
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'DesignPartterns\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/DesignPartterns',
         ),
         'DeepCopy\\' => 
         array (
